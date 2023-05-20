@@ -5,7 +5,8 @@
 // - Encontre o elemento mínimo no vetor não ordenado.
 // - Troque o elemento mínimo com o primeiro elemento do vetor não ordenado.
 // - Repita o processo acima para o restante do vetor, excluindo o elemento já ordenado.
-// - O Selection Sort possui uma complexidade de tempo de O(n^2), onde n é o tamanho do vetor. O número de trocas realizadas pelo Selection Sort é (n-1) no pior caso.
+
+// O Selection Sort possui uma complexidade de tempo de O(n^2), onde n é o tamanho do vetor. O número de trocas realizadas pelo Selection Sort é (n-1) no pior caso.
 #include <iostream>
 #include <vector>
 
@@ -27,7 +28,8 @@ int selectionSort(vector<int>& lista) {
             swap(lista[i], lista[minIndex]);
             trocas++;
             cout << "Lista depois da troca " << trocas << ": ";
-            for (int num : lista) {
+            for(int i = 0; i < lista.size(); i++){
+                int num = lista[i];
                 cout << num << " ";
             }
             cout << endl << endl;
@@ -52,9 +54,11 @@ int main() {
 
     cout << "Numero de Trocas : " << trocas << endl << endl;
     cout << "Vetor Ordenado : ";
-    for (int num : lista) {
-        cout << num << " ";
-    }
+
+    for (int i = 0; i < lista.size(); ++i) {
+    int num = lista[i];
+    cout << num << " ";
+}
     cout << endl << endl;
 
     return 0;
