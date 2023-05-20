@@ -15,6 +15,28 @@ using namespace std;
 
 int bubbleSort(vector<int>& lista){
     int n = lista.size();
+    int trocas = 0;
+
+    for(int i = 0; i < n-1; i++){
+        bool trocado = false;
+        for(int j = 0; j < n-i-1;j++){
+            if(lista[j] > lista[j+1]){
+                swap(lista[j],lista[j+1]);
+                trocado = true;
+                trocas++;
+                cout << "Lista depois da troca " << trocas << ": ";
+                for(int i = 0; i < lista.size();i++){
+                    int num = lista[i];
+                    cout << num << " ";
+                }
+                cout << endl;
+            }
+        }
+        if(!trocado){
+            break;
+        }
+    }
+    return trocas;
 }
 
 int main() {

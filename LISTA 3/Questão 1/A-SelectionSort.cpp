@@ -16,9 +16,9 @@ int selectionSort(vector<int>& lista) {
     int n = lista.size();
     int trocas = 0;
 
-    for (int i = 0; i < n - 1; ++i) {
+    for (int i = 0; i < n - 1; i++) {
         int minIndex = i;
-        for (int j = i + 1; j < n; ++j) {
+        for (int j = i + 1; j < n; j++) {
             if (lista[j] < lista[minIndex]) {
                 minIndex = j;
             }
@@ -55,10 +55,10 @@ int main() {
     cout << "Numero de Trocas : " << trocas << endl << endl;
     cout << "Vetor Ordenado : ";
 
-    for (int i = 0; i < lista.size(); ++i) {
+    for (int i = 0; i < lista.size(); i++) {
     int num = lista[i];
     cout << num << " ";
-}
+    }
     cout << endl << endl;
 
     return 0;
