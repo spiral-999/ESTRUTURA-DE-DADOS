@@ -1,0 +1,14 @@
+Sendo os dois vetores ordenados e cada um com n elementos, primeiro é
+necessário:
+- criar um vetor vazio com 2n de tamanho para guardar todos os elementos
+dos dois vetores
+- inicializar um índices para cada vetor que começana primeira posição
+de cada um
+- comparar os dois índices e inserir o menor deles no vetor
+- incrementar o índice correspondente
+- repetir os passos de comparar e incrementar o índice até que todos os 
+elementos de um dos vetores tenham sido adicionados no novo vetor
+- copiar os elementos que faltam do outro vetor
+
+A complexidade é O(n) já que já que percorre os vetores ordenados apenas
+uma vez, comparando e inserindo no novo vetor.
