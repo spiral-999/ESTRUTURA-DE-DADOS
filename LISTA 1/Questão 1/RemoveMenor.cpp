@@ -33,5 +33,5 @@ int main()
     {
         cout << valor << " ";
     }
-    cout << std::endl;
+    cout << endl;
 }
